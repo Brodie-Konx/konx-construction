@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     locale: "en_AU",
     siteName: "Konx Construction Group",
   },
+  verification: {
+    google: "Cb2OHyMFqA-h2F2Wbq2AuASM6VTzTS8-xuaOa2DnfFU",
+  },
 };
 
 export default function RootLayout({
