@@ -42,12 +42,6 @@ const values = [
   },
 ];
 
-const teamPlaceholders = [
-  { name: "Director", role: "Managing Director" },
-  { name: "Site Manager", role: "Senior Site Manager" },
-  { name: "Estimator", role: "Lead Estimator" },
-];
-
 export default function AboutPage() {
   return (
     <>
@@ -86,7 +80,7 @@ export default function AboutPage() {
             <AnimateOnScroll direction="left">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80"
+                  src="/images/concrete-works.jpg"
                   alt="Konx Construction Group team Perth"
                   fill
                   className="object-cover"
@@ -120,10 +114,9 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="mt-10 grid grid-cols-3 gap-6 border-t border-[#1a1a1a] pt-8">
+              <div className="mt-10 grid grid-cols-2 gap-6 border-t border-[#1a1a1a] pt-8">
                 {[
-                  { stat: "15+", label: "Years Experience" },
-                  { stat: "200+", label: "Projects Completed" },
+                  { stat: "10+", label: "Years Experience" },
                   { stat: "100%", label: "Perth-Based Team" },
                 ].map((item) => (
                   <div key={item.stat}>
@@ -163,42 +156,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* TEAM */}
-      <section className="py-24 bg-[#0a0a0a] border-t border-[#111]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <AnimateOnScroll>
-            <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-3">
-              The People
-            </p>
-            <h2 className="text-4xl font-bold text-white tracking-tight mb-4">
-              Our Team
-            </h2>
-            <p className="text-[#777] mb-14 max-w-lg">
-              Our leadership team brings deep expertise in commercial construction across Perth and WA.
-            </p>
-          </AnimateOnScroll>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {teamPlaceholders.map((member, i) => (
-              <AnimateOnScroll key={member.name} delay={i * 0.1}>
-                <div className="bg-[#111] border border-[#1e1e1e] overflow-hidden group">
-                  <div className="aspect-[3/2] bg-[#161616] flex items-center justify-center relative overflow-hidden">
-                    <svg className="w-16 h-16 text-[#2a2a2a]" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
-                    </svg>
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#111]/50 to-transparent" />
-                  </div>
-                  <div className="p-5">
-                    <p className="text-[#888] text-xs tracking-widest uppercase mb-1">{member.role}</p>
-                    <p className="text-white font-semibold">{member.name}</p>
-                    <p className="text-[#555] text-xs mt-1">Photo coming soon</p>
-                  </div>
-                </div>
-              </AnimateOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-20 bg-[#080808] border-t border-[#1a1a1a]">
