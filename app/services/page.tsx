@@ -81,7 +81,7 @@ export default function ServicesPage() {
             <AnimateOnScroll direction="left">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1682937526901-bea0d43d8b6e?w=1000&q=80"
+                  src="https://images.unsplash.com/photo-1679530988140-d6844f4e2ee8?w=1000&q=80"
                   alt="Tilt panel repair Perth"
                   fill
                   className="object-cover"
