@@ -39,6 +39,71 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} h-full`}>
       <body className="min-h-full flex flex-col bg-[#0a0a0a] text-white antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Konx Construction Group PTY LTD",
+              description:
+                "Perth's commercial construction specialists. Tilt panel repair, commercial fit out, and concrete works.",
+              url: "https://www.konxconstructiongroup.com",
+              telephone: "0478 530 664",
+              email: "Info@konxconstructiongroup.com",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Perth",
+                addressRegion: "WA",
+                addressCountry: "AU",
+              },
+              areaServed: {
+                "@type": "GeoCircle",
+                geoMidpoint: {
+                  "@type": "GeoCoordinates",
+                  latitude: -31.9505,
+                  longitude: 115.8605,
+                },
+                geoRadius: "100000",
+              },
+              openingHours: "Mo-Fr 07:00-17:00",
+              priceRange: "$$",
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Construction Services",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Tilt Panel Repair",
+                      description:
+                        "Expert repair of cracked, spalled, and deteriorating tilt panel structures in Perth.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Commercial Fit Out",
+                      description:
+                        "Full commercial interior fit outs from shell to finished space across Perth.",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Concrete Works",
+                      description:
+                        "Structural concrete — slabs, footings, hardstand, and more in Perth.",
+                    },
+                  },
+                ],
+              },
+            }),
+          }}
+        />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
