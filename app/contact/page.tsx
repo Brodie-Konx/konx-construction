@@ -55,7 +55,7 @@ export default function ContactPage() {
       <section className="pt-40 pb-16 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimateOnScroll>
-            <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-3">
+            <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-3">
               Get in Touch
             </p>
             <h1 className="text-5xl md:text-6xl font-bold text-white tracking-tight mb-4">
@@ -82,7 +82,7 @@ export default function ContactPage() {
                 <div className="space-y-6 mb-10">
                   {contactDetails.map((detail) => (
                     <div key={detail.label} className="flex items-start gap-4">
-                      <div className="w-9 h-9 bg-[#111] border border-[#1e1e1e] flex items-center justify-center text-[#0066ff] flex-shrink-0">
+                      <div className="w-9 h-9 bg-[#111] border border-[#1e1e1e] flex items-center justify-center text-[#999] flex-shrink-0">
                         {detail.icon}
                       </div>
                       <div>
@@ -96,7 +96,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="bg-[#111] border border-[#1e1e1e] p-6">
-                  <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-2">
+                  <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-2">
                     Free Site Assessment
                   </p>
                   <p className="text-[#777] text-sm leading-relaxed">

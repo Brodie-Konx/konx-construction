@@ -61,7 +61,7 @@ export default function ServicesPage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <AnimateOnScroll>
-            <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-3">
+            <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-3">
               What We Offer
             </p>
             <h1 className="text-5xl md:text-6xl font-bold text-white tracking-tight mb-4">
@@ -91,7 +91,7 @@ export default function ServicesPage() {
             </AnimateOnScroll>
 
             <AnimateOnScroll direction="right">
-              <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-2">
+              <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-2">
                 Service 01
               </p>
               <h2 className="text-4xl font-bold text-white tracking-tight mb-2">
@@ -113,7 +113,7 @@ export default function ServicesPage() {
               <ul className="space-y-3 mb-8">
                 {tiltPanelProblems.map((p) => (
                   <li key={p} className="flex items-start gap-3 text-[#777] text-sm">
-                    <svg className="w-4 h-4 text-[#0066ff] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-4 h-4 text-[#999] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
                     </svg>
                     {p}
@@ -130,7 +130,7 @@ export default function ServicesPage() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center bg-[#0066ff] hover:bg-[#0052cc] text-white font-semibold px-7 py-3.5 tracking-wide transition-all duration-200 hover:scale-105 text-sm"
+                className="inline-flex items-center bg-[#999] hover:bg-[#777] text-white font-semibold px-7 py-3.5 tracking-wide transition-all duration-200 hover:scale-105 text-sm"
               >
                 Get a Free Assessment
                 <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -161,7 +161,7 @@ export default function ServicesPage() {
             </AnimateOnScroll>
 
             <AnimateOnScroll direction="right" className="lg:order-1">
-              <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-2">
+              <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-2">
                 Service 02
               </p>
               <h2 className="text-4xl font-bold text-white tracking-tight mb-2">
@@ -182,7 +182,7 @@ export default function ServicesPage() {
               <ul className="grid grid-cols-2 gap-3 mb-8">
                 {fitOutSpaces.map((s) => (
                   <li key={s} className="flex items-start gap-2 text-[#777] text-sm">
-                    <svg className="w-4 h-4 text-[#0066ff] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-4 h-4 text-[#999] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
                     </svg>
                     {s}
@@ -194,7 +194,7 @@ export default function ServicesPage() {
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {fitOutProcess.map((p) => (
                   <div key={p.step} className="bg-[#111] border border-[#1e1e1e] p-4">
-                    <p className="text-[#0066ff] text-xs font-bold tracking-widest mb-1">{p.step}</p>
+                    <p className="text-[#999] text-xs font-bold tracking-widest mb-1">{p.step}</p>
                     <p className="text-white font-semibold text-sm mb-1">{p.label}</p>
                     <p className="text-[#666] text-xs leading-relaxed">{p.detail}</p>
                   </div>
@@ -203,7 +203,7 @@ export default function ServicesPage() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center bg-[#0066ff] hover:bg-[#0052cc] text-white font-semibold px-7 py-3.5 tracking-wide transition-all duration-200 hover:scale-105 text-sm"
+                className="inline-flex items-center bg-[#999] hover:bg-[#777] text-white font-semibold px-7 py-3.5 tracking-wide transition-all duration-200 hover:scale-105 text-sm"
               >
                 Discuss Your Fit Out
                 <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -224,7 +224,7 @@ export default function ServicesPage() {
             <AnimateOnScroll direction="left">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1000&q=80"
+                  src="/images/concrete-works.jpg"
                   alt="Concrete works Perth"
                   fill
                   className="object-cover"
@@ -234,7 +234,7 @@ export default function ServicesPage() {
             </AnimateOnScroll>
 
             <AnimateOnScroll direction="right">
-              <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-2">
+              <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-2">
                 Service 03
               </p>
               <h2 className="text-4xl font-bold text-white tracking-tight mb-2">
@@ -255,7 +255,7 @@ export default function ServicesPage() {
               <ul className="space-y-3 mb-8">
                 {concreteTypes.map((t) => (
                   <li key={t} className="flex items-start gap-3 text-[#777] text-sm">
-                    <svg className="w-4 h-4 text-[#0066ff] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-4 h-4 text-[#999] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
                     </svg>
                     {t}
@@ -265,7 +265,7 @@ export default function ServicesPage() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center bg-[#0066ff] hover:bg-[#0052cc] text-white font-semibold px-7 py-3.5 tracking-wide transition-all duration-200 hover:scale-105 text-sm"
+                className="inline-flex items-center bg-[#999] hover:bg-[#777] text-white font-semibold px-7 py-3.5 tracking-wide transition-all duration-200 hover:scale-105 text-sm"
               >
                 Get a Concrete Quote
                 <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -287,7 +287,7 @@ export default function ServicesPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center bg-[#0066ff] hover:bg-[#0052cc] text-white font-semibold px-8 py-4 tracking-wide transition-all duration-200 hover:scale-105 text-sm"
+              className="inline-flex items-center bg-[#999] hover:bg-[#777] text-white font-semibold px-8 py-4 tracking-wide transition-all duration-200 hover:scale-105 text-sm"
             >
               Book a Free Site Assessment
             </Link>

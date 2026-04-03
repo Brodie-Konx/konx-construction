@@ -41,7 +41,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-[#777] text-sm hover:text-[#0066ff] transition-colors"
+                    className="text-[#777] text-sm hover:text-[#999] transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -64,7 +64,7 @@ export default function Footer() {
                 <li key={s}>
                   <Link
                     href="/services"
-                    className="text-[#777] text-sm hover:text-[#0066ff] transition-colors"
+                    className="text-[#777] text-sm hover:text-[#999] transition-colors"
                   >
                     {s}
                   </Link>
@@ -80,7 +80,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Konx Construction Group PTY LTD. All rights reserved.
           </p>
           <p className="text-[#333] text-xs tracking-wide">
-            ABN: XX XXX XXX XXX
+            ACN: 696 017 955
           </p>
         </div>
       </div>

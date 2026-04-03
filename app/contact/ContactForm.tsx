@@ -25,8 +25,8 @@ export default function ContactForm() {
   if (submitted) {
     return (
       <div className="bg-[#111] border border-[#1e1e1e] p-10 text-center">
-        <div className="w-12 h-12 bg-[#0066ff]/20 border border-[#0066ff]/30 flex items-center justify-center mx-auto mb-5">
-          <svg className="w-6 h-6 text-[#0066ff]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div className="w-12 h-12 bg-[#999]/20 border border-[#999]/30 flex items-center justify-center mx-auto mb-5">
+          <svg className="w-6 h-6 text-[#999]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
@@ -48,7 +48,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-[#888] text-xs tracking-widest uppercase mb-2" htmlFor="name">
-            Full Name <span className="text-[#0066ff]">*</span>
+            Full Name <span className="text-[#999]">*</span>
           </label>
           <input
             id="name"
@@ -56,7 +56,7 @@ export default function ContactForm() {
             type="text"
             required
             placeholder="John Smith"
-            className="w-full bg-[#0a0a0a] border border-[#222] text-white placeholder-[#444] px-4 py-3 text-sm focus:outline-none focus:border-[#0066ff] transition-colors"
+            className="w-full bg-[#0a0a0a] border border-[#222] text-white placeholder-[#444] px-4 py-3 text-sm focus:outline-none focus:border-[#999] transition-colors"
           />
         </div>
         <div>
@@ -68,7 +68,7 @@ export default function ContactForm() {
             name="company"
             type="text"
             placeholder="Your Company Pty Ltd"
-            className="w-full bg-[#0a0a0a] border border-[#222] text-white placeholder-[#444] px-4 py-3 text-sm focus:outline-none focus:border-[#0066ff] transition-colors"
+            className="w-full bg-[#0a0a0a] border border-[#222] text-white placeholder-[#444] px-4 py-3 text-sm focus:outline-none focus:border-[#999] transition-colors"
           />
         </div>
       </div>
@@ -76,7 +76,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-[#888] text-xs tracking-widest uppercase mb-2" htmlFor="phone">
-            Phone <span className="text-[#0066ff]">*</span>
+            Phone <span className="text-[#999]">*</span>
           </label>
           <input
             id="phone"
@@ -84,12 +84,12 @@ export default function ContactForm() {
             type="tel"
             required
             placeholder="04XX XXX XXX"
-            className="w-full bg-[#0a0a0a] border border-[#222] text-white placeholder-[#444] px-4 py-3 text-sm focus:outline-none focus:border-[#0066ff] transition-colors"
+            className="w-full bg-[#0a0a0a] border border-[#222] text-white placeholder-[#444] px-4 py-3 text-sm focus:outline-none focus:border-[#999] transition-colors"
           />
         </div>
         <div>
           <label className="block text-[#888] text-xs tracking-widest uppercase mb-2" htmlFor="email">
-            Email <span className="text-[#0066ff]">*</span>
+            Email <span className="text-[#999]">*</span>
           </label>
           <input
             id="email"
@@ -97,21 +97,21 @@ export default function ContactForm() {
             type="email"
             required
             placeholder="john@company.com.au"
-            className="w-full bg-[#0a0a0a] border border-[#222] text-white placeholder-[#444] px-4 py-3 text-sm focus:outline-none focus:border-[#0066ff] transition-colors"
+            className="w-full bg-[#0a0a0a] border border-[#222] text-white placeholder-[#444] px-4 py-3 text-sm focus:outline-none focus:border-[#999] transition-colors"
           />
         </div>
       </div>
 
       <div>
         <label className="block text-[#888] text-xs tracking-widest uppercase mb-2" htmlFor="service">
-          Service Needed <span className="text-[#0066ff]">*</span>
+          Service Needed <span className="text-[#999]">*</span>
         </label>
         <select
           id="service"
           name="service"
           required
           defaultValue=""
-          className="w-full bg-[#0a0a0a] border border-[#222] text-white px-4 py-3 text-sm focus:outline-none focus:border-[#0066ff] transition-colors appearance-none cursor-pointer"
+          className="w-full bg-[#0a0a0a] border border-[#222] text-white px-4 py-3 text-sm focus:outline-none focus:border-[#999] transition-colors appearance-none cursor-pointer"
         >
           <option value="" disabled className="text-[#444]">
             Select a service...
@@ -126,7 +126,7 @@ export default function ContactForm() {
 
       <div>
         <label className="block text-[#888] text-xs tracking-widest uppercase mb-2" htmlFor="message">
-          Message <span className="text-[#0066ff]">*</span>
+          Message <span className="text-[#999]">*</span>
         </label>
         <textarea
           id="message"
@@ -134,14 +134,14 @@ export default function ContactForm() {
           required
           rows={5}
           placeholder="Describe your project or what you need help with..."
-          className="w-full bg-[#0a0a0a] border border-[#222] text-white placeholder-[#444] px-4 py-3 text-sm focus:outline-none focus:border-[#0066ff] transition-colors resize-none"
+          className="w-full bg-[#0a0a0a] border border-[#222] text-white placeholder-[#444] px-4 py-3 text-sm focus:outline-none focus:border-[#999] transition-colors resize-none"
         />
       </div>
 
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-[#0066ff] hover:bg-[#0052cc] disabled:bg-[#0066ff]/50 text-white font-semibold py-4 tracking-wide transition-all duration-200 hover:scale-[1.01] active:scale-100 text-sm flex items-center justify-center gap-2"
+        className="w-full bg-[#999] hover:bg-[#777] disabled:bg-[#999]/50 text-white font-semibold py-4 tracking-wide transition-all duration-200 hover:scale-[1.01] active:scale-100 text-sm flex items-center justify-center gap-2"
       >
         {loading ? (
           <>

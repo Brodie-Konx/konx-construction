@@ -66,7 +66,7 @@ export default function AboutPage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <AnimateOnScroll>
-            <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-3">
+            <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-3">
               Who We Are
             </p>
             <h1 className="text-5xl md:text-6xl font-bold text-white tracking-tight mb-4">
@@ -94,15 +94,15 @@ export default function AboutPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/40 to-transparent" />
                 {/* Stat callout */}
-                <div className="absolute top-6 right-6 border border-[#0066ff]/30 bg-[#0a0a0a]/90 backdrop-blur p-5">
-                  <p className="text-[#0066ff] font-bold text-3xl">Perth</p>
+                <div className="absolute top-6 right-6 border border-[#999]/30 bg-[#0a0a0a]/90 backdrop-blur p-5">
+                  <p className="text-[#999] font-bold text-3xl">Perth</p>
                   <p className="text-[#888] text-xs tracking-widest uppercase mt-1">Based & Operated</p>
                 </div>
               </div>
             </AnimateOnScroll>
 
             <AnimateOnScroll direction="right">
-              <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-3">
+              <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-3">
                 Our Story
               </p>
               <h2 className="text-4xl font-bold text-white tracking-tight mb-6">
@@ -141,7 +141,7 @@ export default function AboutPage() {
       <section className="py-24 bg-[#080808] border-t border-[#111]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimateOnScroll>
-            <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-3">
+            <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-3">
               How We Operate
             </p>
             <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-16">
@@ -153,7 +153,7 @@ export default function AboutPage() {
             {values.map((value, i) => (
               <AnimateOnScroll key={value.title} delay={i * 0.12}>
                 <div className="bg-[#111] border border-[#1e1e1e] p-8 h-full">
-                  <div className="text-[#0066ff] mb-5">{value.icon}</div>
+                  <div className="text-[#999] mb-5">{value.icon}</div>
                   <h3 className="text-white font-bold text-lg mb-3">{value.title}</h3>
                   <p className="text-[#777] text-sm leading-relaxed">{value.description}</p>
                 </div>
@@ -167,7 +167,7 @@ export default function AboutPage() {
       <section className="py-24 bg-[#0a0a0a] border-t border-[#111]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimateOnScroll>
-            <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-3">
+            <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-3">
               The People
             </p>
             <h2 className="text-4xl font-bold text-white tracking-tight mb-4">
@@ -208,7 +208,7 @@ export default function AboutPage() {
             <p className="text-[#777] mb-8">Get in touch for a free site assessment and honest quote.</p>
             <Link
               href="/contact"
-              className="inline-flex items-center bg-[#0066ff] hover:bg-[#0052cc] text-white font-semibold px-8 py-4 tracking-wide transition-all duration-200 hover:scale-105 text-sm"
+              className="inline-flex items-center bg-[#999] hover:bg-[#777] text-white font-semibold px-8 py-4 tracking-wide transition-all duration-200 hover:scale-105 text-sm"
             >
               Contact the Team
             </Link>

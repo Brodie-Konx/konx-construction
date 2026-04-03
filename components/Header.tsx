@@ -54,7 +54,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm tracking-wide transition-colors duration-200 hover:text-[#0066ff] ${
+                className={`text-sm tracking-wide transition-colors duration-200 hover:text-[#999] ${
                   pathname === link.href
                     ? "text-white font-medium"
                     : "text-[#aaa]"
@@ -65,7 +65,7 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="bg-[#0066ff] hover:bg-[#0052cc] text-white text-sm font-semibold px-5 py-2.5 tracking-wide transition-all duration-200 hover:scale-105 active:scale-100"
+              className="bg-[#999] hover:bg-[#777] text-white text-sm font-semibold px-5 py-2.5 tracking-wide transition-all duration-200 hover:scale-105 active:scale-100"
             >
               Get a Quote
             </Link>
@@ -107,7 +107,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className={`py-3 text-sm tracking-wide border-b border-[#111] transition-colors hover:text-[#0066ff] ${
+              className={`py-3 text-sm tracking-wide border-b border-[#111] transition-colors hover:text-[#999] ${
                 pathname === link.href ? "text-white font-medium" : "text-[#aaa]"
               }`}
             >
@@ -116,7 +116,7 @@ export default function Header() {
           ))}
           <Link
             href="/contact"
-            className="mt-4 bg-[#0066ff] hover:bg-[#0052cc] text-white text-sm font-semibold px-5 py-3 text-center tracking-wide transition-colors duration-200"
+            className="mt-4 bg-[#999] hover:bg-[#777] text-white text-sm font-semibold px-5 py-3 text-center tracking-wide transition-colors duration-200"
           >
             Get a Quote
           </Link>

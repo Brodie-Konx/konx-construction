@@ -69,7 +69,7 @@ export default function HomePage() {
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
+            src="/images/concrete-works.jpg"
             alt="Commercial construction site Perth"
             fill
             priority
@@ -83,16 +83,16 @@ export default function HomePage() {
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-24 pb-32">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 border border-[#0066ff]/30 bg-[#0066ff]/10 px-4 py-1.5 mb-8">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#0066ff] animate-pulse" />
-              <span className="text-[#0066ff] text-xs font-medium tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 border border-[#999]/30 bg-[#999]/10 px-4 py-1.5 mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#999] animate-pulse" />
+              <span className="text-[#999] text-xs font-medium tracking-widest uppercase">
                 Perth, Western Australia
               </span>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight text-white mb-6">
               Perth&apos;s Commercial
-              <span className="block text-[#0066ff]">Construction</span>
+              <span className="block text-[#999]">Construction</span>
               <span className="block">Specialists</span>
             </h1>
 
@@ -104,7 +104,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[#0066ff] hover:bg-[#0052cc] text-white font-semibold px-8 py-4 tracking-wide transition-all duration-200 hover:scale-105 active:scale-100 text-sm"
+                className="inline-flex items-center justify-center bg-[#999] hover:bg-[#777] text-white font-semibold px-8 py-4 tracking-wide transition-all duration-200 hover:scale-105 active:scale-100 text-sm"
               >
                 Get a Free Quote
                 <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -130,7 +130,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimateOnScroll>
             <div className="mb-16">
-              <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-3">
+              <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-3">
                 What We Do
               </p>
               <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
@@ -142,8 +142,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {services.map((service, i) => (
               <AnimateOnScroll key={service.title} delay={i * 0.1}>
-                <div className="group bg-[#111] border border-[#1e1e1e] p-8 hover:border-[#0066ff]/40 transition-all duration-300 hover:bg-[#111]/80">
-                  <div className="text-[#0066ff] mb-5 group-hover:scale-110 transition-transform duration-300 inline-block">
+                <div className="group bg-[#111] border border-[#1e1e1e] p-8 hover:border-[#999]/40 transition-all duration-300 hover:bg-[#111]/80">
+                  <div className="text-[#999] mb-5 group-hover:scale-110 transition-transform duration-300 inline-block">
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-bold text-white mb-3 tracking-tight">
@@ -154,7 +154,7 @@ export default function HomePage() {
                   </p>
                   <Link
                     href="/services"
-                    className="text-[#0066ff] text-sm font-medium hover:underline inline-flex items-center gap-1 group/link"
+                    className="text-[#999] text-sm font-medium hover:underline inline-flex items-center gap-1 group/link"
                   >
                     Learn more
                     <svg className="w-3 h-3 group-hover/link:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -189,7 +189,7 @@ export default function HomePage() {
             {/* Content */}
             <div>
               <AnimateOnScroll direction="right">
-                <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-3">
+                <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-3">
                   Why Choose Us
                 </p>
                 <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-4">
@@ -204,8 +204,8 @@ export default function HomePage() {
                 {trustPoints.map((point, i) => (
                   <AnimateOnScroll key={point.title} delay={i * 0.1} direction="right">
                     <div className="flex gap-4">
-                      <div className="mt-1 w-5 h-5 rounded-full bg-[#0066ff]/20 border border-[#0066ff]/30 flex items-center justify-center flex-shrink-0">
-                        <svg className="w-3 h-3 text-[#0066ff]" fill="currentColor" viewBox="0 0 20 20">
+                      <div className="mt-1 w-5 h-5 rounded-full bg-[#999]/20 border border-[#999]/30 flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-[#999]" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </div>
@@ -226,7 +226,7 @@ export default function HomePage() {
       <section className="py-24 bg-[#0a0a0a] border-t border-b border-[#1a1a1a]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <AnimateOnScroll>
-            <p className="text-[#0066ff] text-xs font-semibold tracking-widest uppercase mb-4">
+            <p className="text-[#999] text-xs font-semibold tracking-widest uppercase mb-4">
               Let&apos;s Work Together
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6">
@@ -237,7 +237,7 @@ export default function HomePage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center bg-[#0066ff] hover:bg-[#0052cc] text-white font-semibold px-10 py-4 tracking-wide transition-all duration-200 hover:scale-105 active:scale-100 text-sm"
+              className="inline-flex items-center bg-[#999] hover:bg-[#777] text-white font-semibold px-10 py-4 tracking-wide transition-all duration-200 hover:scale-105 active:scale-100 text-sm"
             >
               Contact Us Today
               <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
