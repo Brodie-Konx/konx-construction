@@ -20,12 +20,6 @@ export default function TiltPanelRepairPage() {
         .lp-wrap *, .lp-wrap *::before, .lp-wrap *::after { box-sizing: border-box; margin: 0; padding: 0; }
         .lp-container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
-        /* Top Bar */
-        .lp-topbar { background: #050505; padding: 10px 0; font-size: 14px; border-bottom: 1px solid #2A2A2A; }
-        .lp-topbar .lp-container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-        .lp-topbar a { color: #fff; text-decoration: none; font-weight: 500; }
-        .lp-topbar a:hover { color: #999; }
-
         /* Hero */
         .lp-hero { background: #0A0A0A; padding: 80px 0 60px; }
         .lp-hero h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 800; line-height: 1.1; margin-bottom: 20px; max-width: 700px; }
@@ -120,19 +114,11 @@ export default function TiltPanelRepairPage() {
           .lp-contact-layout { grid-template-columns: 1fr; }
           .lp-hero { padding: 48px 0 40px; }
           .lp-section { padding: 48px 0; }
-          .lp-trust-items { gap: 20px; }
+          .lp-trust-items { flex-direction: column; align-items: flex-start; gap: 12px; padding-left: 24px; }
         }
       `}</style>
 
       <div className="lp-wrap">
-        {/* TOP BAR */}
-        <div className="lp-topbar">
-          <div className="lp-container">
-            <span>Konx Construction Group — Perth, WA</span>
-            <a href="tel:0478530664">Call Now: 0478 530 664</a>
-          </div>
-        </div>
-
         {/* HERO */}
         <section className="lp-hero lp-section">
           <div className="lp-container">
