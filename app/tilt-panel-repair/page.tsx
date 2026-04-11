@@ -238,11 +238,6 @@ export default function TiltPanelRepairPage() {
                 <h3>Free Site Assessment</h3>
                 <p>We&apos;ll inspect the damage, tell you exactly what needs fixing, and give you a fixed-price quote with no obligation.</p>
               </div>
-              <div className="lp-why-card">
-                <div className="lp-why-number">0</div>
-                <h3>No Surprises</h3>
-                <p>Fixed-price quoting means the price we quote is the price you pay. No hidden costs, no scope creep, no surprises.</p>
-              </div>
             </div>
           </div>
         </section>
