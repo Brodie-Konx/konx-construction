@@ -176,7 +176,7 @@ export default function HomePage() {
             <AnimateOnScroll direction="left">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80"
+                  src="https://images.unsplash.com/photo-1675737716803-e3fb6f6ae0b3?w=900&q=80"
                   alt="Commercial construction Perth"
                   fill
                   className="object-cover"

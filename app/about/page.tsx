@@ -49,7 +49,7 @@ export default function AboutPage() {
       <section className="relative pt-40 pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1675737716803-e3fb6f6ae0b3?w=1920&q=80"
             alt="Konx Construction Group Perth"
             fill
             priority
