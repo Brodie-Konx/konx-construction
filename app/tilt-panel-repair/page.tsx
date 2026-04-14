@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import TiltPanelForm from './TiltPanelForm'
 
 export const metadata: Metadata = {
   title: 'Tilt Panel Repair Perth | Konx Construction Group',
@@ -305,35 +306,7 @@ export default function TiltPanelRepairPage() {
                 </div>
               </div>
 
-              <form className="lp-form" action="/contact" method="GET">
-                <h3>Request a Free Site Assessment</h3>
-                <div className="lp-form-group">
-                  <label htmlFor="name">Your Name</label>
-                  <input type="text" id="name" name="name" placeholder="Full name" required />
-                </div>
-                <div className="lp-form-group">
-                  <label htmlFor="phone">Phone Number</label>
-                  <input type="tel" id="phone" name="phone" placeholder="0400 000 000" required />
-                </div>
-                <div className="lp-form-group">
-                  <label htmlFor="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="you@example.com" />
-                </div>
-                <div className="lp-form-group">
-                  <label htmlFor="service">Type of Repair</label>
-                  <select id="service" name="service">
-                    <option value="crack-repair">Crack Repair / Epoxy Injection</option>
-                    <option value="spalling">Spalling / Concrete Cancer</option>
-                    <option value="structural">Structural Damage</option>
-                    <option value="other">Not Sure — Need Assessment</option>
-                  </select>
-                </div>
-                <div className="lp-form-group">
-                  <label htmlFor="message">Tell Us About the Damage</label>
-                  <textarea id="message" name="message" placeholder="Describe what you're seeing — cracks, spalling, water coming in, etc."></textarea>
-                </div>
-                <button type="submit" className="lp-btn-submit">Request Free Assessment</button>
-              </form>
+              <TiltPanelForm />
             </div>
           </div>
         </section>
