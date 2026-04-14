@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { name, phone, email, service, message, company, formSource, suburb, jobType, size } = body;
+    const { name, phone, email, service, message, company, formSource, suburb, address, jobType, size } = body;
 
     if (!name || !phone) {
       return NextResponse.json(
@@ -37,6 +37,7 @@ export async function POST(req: NextRequest) {
         <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #ddd;">Phone</td><td style="padding:8px;border-bottom:1px solid #ddd;"><a href="tel:${phone}">${phone}</a></td></tr>
         ${email ? `<tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #ddd;">Email</td><td style="padding:8px;border-bottom:1px solid #ddd;"><a href="mailto:${email}">${email}</a></td></tr>` : ""}
         <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #ddd;">Suburb</td><td style="padding:8px;border-bottom:1px solid #ddd;">${suburb || "Not provided"}</td></tr>
+        ${address ? `<tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #ddd;">Job Address</td><td style="padding:8px;border-bottom:1px solid #ddd;">${address}</td></tr>` : ""}
         <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #ddd;">Job Type</td><td style="padding:8px;border-bottom:1px solid #ddd;">${jobType || "Not specified"}</td></tr>
         <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #ddd;">Approximate Size</td><td style="padding:8px;border-bottom:1px solid #ddd;">${size || "Not specified"}</td></tr>
         ${message ? `<tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #ddd;">Notes</td><td style="padding:8px;border-bottom:1px solid #ddd;">${message}</td></tr>` : ""}

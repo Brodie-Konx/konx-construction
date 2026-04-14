@@ -18,6 +18,7 @@ export default function ConcreteSlabsForm() {
       phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
       email: (form.elements.namedItem("email") as HTMLInputElement).value,
       suburb: (form.elements.namedItem("suburb") as HTMLInputElement).value,
+      address: (form.elements.namedItem("address") as HTMLInputElement).value,
       jobType: (form.elements.namedItem("jobType") as HTMLSelectElement).value,
       size: (form.elements.namedItem("size") as HTMLSelectElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
@@ -47,9 +48,9 @@ export default function ConcreteSlabsForm() {
   if (submitted) {
     return (
       <div className="lp-form" style={{ textAlign: "center", padding: "40px 24px" }}>
-        <h3 style={{ marginBottom: "12px" }}>Quote Request Received</h3>
+        <h3 style={{ marginBottom: "12px" }}>Booking Received</h3>
         <p style={{ color: "#A0A0A0" }}>
-          Thanks — we&apos;ll get back to you same day with a price. If it&apos;s urgent, call us on{" "}
+          Thanks — we&apos;ll confirm your booking same day. If it&apos;s urgent, call us on{" "}
           <a href="tel:0478530664" style={{ color: "#fff" }}>0478 530 664</a>.
         </p>
       </div>
@@ -58,7 +59,7 @@ export default function ConcreteSlabsForm() {
 
   return (
     <form className="lp-form" onSubmit={handleSubmit}>
-      <h3>Request a Free Quote</h3>
+      <h3>Make a Booking</h3>
       <div className="lp-form-group">
         <label htmlFor="name">Your Name</label>
         <input type="text" id="name" name="name" placeholder="Full name" required />
@@ -74,6 +75,10 @@ export default function ConcreteSlabsForm() {
       <div className="lp-form-group">
         <label htmlFor="suburb">Suburb</label>
         <input type="text" id="suburb" name="suburb" placeholder="e.g. Baldivis, Joondalup, Canning Vale" required />
+      </div>
+      <div className="lp-form-group">
+        <label htmlFor="address">Job Address</label>
+        <input type="text" id="address" name="address" placeholder="Street address where the work is needed" required />
       </div>
       <div className="lp-form-group">
         <label htmlFor="jobType">Type of Job</label>
@@ -103,10 +108,10 @@ export default function ConcreteSlabsForm() {
         <p style={{ color: "#ef4444", fontSize: "14px", textAlign: "center", marginBottom: "12px" }}>{error}</p>
       )}
       <button type="submit" className="lp-btn-submit" disabled={loading}>
-        {loading ? "Sending..." : "Send My Quote Request"}
+        {loading ? "Sending..." : "Book My Job"}
       </button>
       <p style={{ textAlign: "center", fontSize: "13px", color: "#A0A0A0", marginTop: "12px" }}>
-        We respond same day — usually within a few hours.
+        We confirm same day — usually within a few hours.
       </p>
     </form>
   );

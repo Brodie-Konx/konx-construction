@@ -21,11 +21,6 @@ export default function ConcreteSlabsPage() {
         .lp-wrap *, .lp-wrap *::before, .lp-wrap *::after { box-sizing: border-box; margin: 0; padding: 0; }
         .lp-container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 
-        /* Topbar */
-        .lp-topbar { background: #050505; padding: 10px 0; font-size: 14px; border-bottom: 1px solid #2A2A2A; }
-        .lp-topbar .lp-container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-        .lp-topbar a { color: #fff; text-decoration: none; font-weight: 500; }
-        .lp-topbar a:hover { color: #999; }
 
         /* Hero */
         .lp-hero { background: #0A0A0A; padding: 80px 0 60px; }
@@ -150,14 +145,6 @@ export default function ConcreteSlabsPage() {
 
       <div className="lp-wrap">
 
-        {/* TOPBAR */}
-        <div className="lp-topbar">
-          <div className="lp-container">
-            <span>Konx Construction Group — Perth, WA</span>
-            <a href="tel:0478530664">Call Now: 0478 530 664</a>
-          </div>
-        </div>
-
         {/* HERO */}
         <section className="lp-hero lp-section">
           <div className="lp-container">
@@ -165,7 +152,7 @@ export default function ConcreteSlabsPage() {
             <p>Need a slab poured before your shed goes up? We specialise in shed slabs, patios, driveways and paths up to 25m2. Grey concrete, fixed pricing, fast turnaround.</p>
             <div className="lp-ctas">
               <a href="tel:0478530664" className="lp-btn lp-btn-primary">Call 0478 530 664</a>
-              <a href="#contact" className="lp-btn lp-btn-secondary">Get a Free Quote</a>
+              <a href="#contact" className="lp-btn lp-btn-secondary">Make a Booking</a>
             </div>
           </div>
         </section>
@@ -334,10 +321,10 @@ export default function ConcreteSlabsPage() {
         <section className="lp-cta-banner">
           <div className="lp-container">
             <h2>Shed Going Up? Get the Slab Sorted First.</h2>
-            <p>Fixed pricing, fast turnaround, all Perth suburbs. Get a free quote today — most jobs booked within the week.</p>
+            <p>Fixed pricing, fast turnaround, all Perth suburbs. Make a booking today — most jobs completed within the week.</p>
             <div className="lp-ctas">
               <a href="tel:0478530664" className="lp-btn lp-btn-primary">Call 0478 530 664</a>
-              <a href="#contact" className="lp-btn lp-btn-secondary">Get a Free Quote</a>
+              <a href="#contact" className="lp-btn lp-btn-secondary">Make a Booking</a>
             </div>
           </div>
         </section>
@@ -347,8 +334,8 @@ export default function ConcreteSlabsPage() {
           <div className="lp-container">
             <div className="lp-contact-layout">
               <div className="lp-contact-info">
-                <h2>Get Your Free Quote</h2>
-                <p>Tell us what you need and where you are. We&apos;ll get back to you fast — usually same day — with a fixed price. No sales pitch, no obligation.</p>
+                <h2>Make a Booking</h2>
+                <p>Fill in your details below and we&apos;ll lock in a date. Fixed pricing, no surprises — just tell us what you need and where you are.</p>
                 <div className="lp-contact-detail">
                   <strong>Phone:</strong> <a href="tel:0478530664">0478 530 664</a>
                 </div>
