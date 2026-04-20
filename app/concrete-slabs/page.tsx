@@ -3,11 +3,11 @@ import ConcreteSlabsForm from './ConcreteSlabsForm'
 
 export const metadata: Metadata = {
   title: 'Shed Slabs & Small Concrete Jobs Perth | Konx Construction Group',
-  description: 'Shed slabs, patios, driveways and paths up to 25m2. Fixed pricing from $1,450. Grey concrete specialists serving all Perth suburbs. Free quotes — call 0478 530 664.',
+  description: 'Shed slabs, patios, driveways and paths up to 25m2. Fixed pricing from $1,750. Grey concrete specialists serving all Perth suburbs. Free quotes — call 0478 530 664.',
   keywords: 'shed slab Perth, small concrete slab Perth, concrete patio Perth, driveway slab Perth, concrete path Perth, grey concrete Perth',
   openGraph: {
     title: 'Shed Slabs & Small Concrete Jobs Perth | Konx Construction Group',
-    description: 'Fixed pricing from $1,450. Shed slabs, patios, driveways and paths up to 25m2. Serving all Perth suburbs.',
+    description: 'Fixed pricing from $1,750. Shed slabs, patios, driveways and paths up to 25m2. Serving all Perth suburbs.',
     locale: 'en_AU',
     type: 'website',
   },
@@ -179,7 +179,7 @@ export default function ConcreteSlabsPage() {
               <div className="lp-pricing-card">
                 <div className="lp-pricing-label">Small Pour</div>
                 <div className="lp-pricing-size">1 – 10m2</div>
-                <div className="lp-pricing-price">$1,450 <span>+ GST</span></div>
+                <div className="lp-pricing-price">$1,750 <span>+ GST</span></div>
                 <div className="lp-pricing-note">Minimum charge covers all small pours. Includes site prep, formwork, concrete and finishing.</div>
               </div>
               <div className="lp-pricing-card featured">
