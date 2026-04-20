@@ -184,7 +184,7 @@ export default function ConcreteSlabsPage() {
               </div>
               <div className="lp-pricing-card featured">
                 <div className="lp-pricing-label">Standard Pour</div>
-                <div className="lp-pricing-size">10 – 25m2</div>
+                <div className="lp-pricing-size">11 – 25m2</div>
                 <div className="lp-pricing-price">$2,650 <span>+ GST</span></div>
                 <div className="lp-pricing-note">For mid-size slabs. Same fixed pricing — quote confirmed before work begins.</div>
               </div>
