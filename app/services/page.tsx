@@ -9,11 +9,10 @@ export const metadata: Metadata = {
     "Tilt panel construction and repair, commercial fit out, and concrete works in Perth, WA. Konx Construction Group delivers quality commercial construction services.",
 };
 
-const tiltPanelBuildSteps = [
-  { step: "01", label: "Design & Engineering", detail: "We coordinate drawings, engineering and approvals so the build is ready to go." },
-  { step: "02", label: "Slab & Casting", detail: "Footings and floor slab poured, then panels cast on site to specification." },
-  { step: "03", label: "Lift & Brace", detail: "Panels craned into position, braced and connected with a fully managed crew." },
-  { step: "04", label: "Roof, Fit Out & Handover", detail: "Steel, roofing and finishes completed, then a clean handover on time." },
+const tiltPanelPromises = [
+  { label: "Fixed Price", detail: "One fixed price for the whole build, agreed up front. No surprise variations or blowouts." },
+  { label: "Guaranteed Timeline", detail: "A locked-in build program we commit to, so you can plan your move-in and operations." },
+  { label: "Set Start & Finish Date", detail: "You know exactly when we start on site and when you get the keys — before work begins." },
 ];
 
 const tiltPanelProblems = [
@@ -114,15 +113,17 @@ export default function ServicesPage() {
                 every trade, the program and the budget.
               </p>
 
-              <h3 className="text-white font-semibold text-sm tracking-wide mb-4">
-                How We Build
+<h3 className="text-white font-semibold text-sm tracking-wide mb-4">
+                Our Promise on Every Build
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-                {tiltPanelBuildSteps.map((s) => (
-                  <div key={s.step} className="bg-[#111] border border-[#1e1e1e] p-5">
-                    <p className="text-[#999] text-xs font-semibold tracking-widest mb-2">{s.step}</p>
-                    <p className="text-white font-semibold text-sm mb-1">{s.label}</p>
-                    <p className="text-[#777] text-sm leading-relaxed">{s.detail}</p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+                {tiltPanelPromises.map((item) => (
+                  <div key={item.label} className="bg-[#111] border border-[#1e1e1e] p-5">
+                    <svg className="w-5 h-5 text-[#999] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
+                    </svg>
+                    <p className="text-white font-semibold text-sm mb-1">{item.label}</p>
+                    <p className="text-[#777] text-sm leading-relaxed">{item.detail}</p>
                   </div>
                 ))}
               </div>
