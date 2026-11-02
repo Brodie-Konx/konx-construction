@@ -87,11 +87,6 @@ export default function AboutPage() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/40 to-transparent" />
-                {/* Stat callout */}
-                <div className="absolute top-6 right-6 border border-[#999]/30 bg-[#0a0a0a]/90 backdrop-blur p-5">
-                  <p className="text-[#999] font-bold text-3xl">Perth</p>
-                  <p className="text-[#888] text-xs tracking-widest uppercase mt-1">Based & Operated</p>
-                </div>
               </div>
             </AnimateOnScroll>
 
