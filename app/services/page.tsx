@@ -6,8 +6,15 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Tilt panel repair, commercial fit out, and concrete works in Perth, WA. Konx Construction Group delivers quality commercial construction services.",
+    "Tilt panel construction and repair, commercial fit out, and concrete works in Perth, WA. Konx Construction Group delivers quality commercial construction services.",
 };
+
+const tiltPanelBuildSteps = [
+  { step: "01", label: "Design & Engineering", detail: "We coordinate drawings, engineering and approvals so the build is ready to go." },
+  { step: "02", label: "Slab & Casting", detail: "Footings and floor slab poured, then panels cast on site to specification." },
+  { step: "03", label: "Lift & Brace", detail: "Panels craned into position, braced and connected with a fully managed crew." },
+  { step: "04", label: "Roof, Fit Out & Handover", detail: "Steel, roofing and finishes completed, then a clean handover on time." },
+];
 
 const tiltPanelProblems = [
   "Surface cracking and concrete spalling",
@@ -74,15 +81,15 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* TILT PANEL REPAIR */}
-      <section id="tilt-panel-repair" className="py-24 bg-[#0a0a0a]">
+      {/* TILT PANEL CONSTRUCTION */}
+      <section id="tilt-panel-construction" className="py-24 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <AnimateOnScroll direction="left">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
                   src="https://images.unsplash.com/photo-1679530988140-d6844f4e2ee8?w=1000&q=80"
-                  alt="Tilt panel repair Perth"
+                  alt="Tilt panel construction Perth"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -95,44 +102,57 @@ export default function ServicesPage() {
                 Service 01
               </p>
               <h2 className="text-4xl font-bold text-white tracking-tight mb-2">
-                Tilt Panel Repair
+                Tilt Panel Construction
               </h2>
               <p className="text-[#666] text-sm tracking-wide mb-6 italic">
-                Restore structural integrity. Protect your asset.
+                Start-to-finish tilt panel builds. One builder, fully accountable.
               </p>
               <p className="text-[#888] leading-relaxed mb-8">
                 Tilt panel construction is the backbone of Perth&apos;s commercial and industrial buildings.
-                Over time, exposure to weather, ground movement, and age causes cracking, spalling, and joint
-                deterioration. Left untreated, these issues escalate — threatening structural integrity and
-                triggering costly compliance problems.
+                As your head contractor, we deliver the whole project — warehouses, factories, showrooms and
+                commercial units — from the first set of drawings through to handover, with one team managing
+                every trade, the program and the budget.
               </p>
 
               <h3 className="text-white font-semibold text-sm tracking-wide mb-4">
-                Common Problems We Fix
+                How We Build
               </h3>
-              <ul className="space-y-3 mb-8">
-                {tiltPanelProblems.map((p) => (
-                  <li key={p} className="flex items-start gap-3 text-[#777] text-sm">
-                    <svg className="w-4 h-4 text-[#999] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
-                    </svg>
-                    {p}
-                  </li>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+                {tiltPanelBuildSteps.map((s) => (
+                  <div key={s.step} className="bg-[#111] border border-[#1e1e1e] p-5">
+                    <p className="text-[#999] text-xs font-semibold tracking-widest mb-2">{s.step}</p>
+                    <p className="text-white font-semibold text-sm mb-1">{s.label}</p>
+                    <p className="text-[#777] text-sm leading-relaxed">{s.detail}</p>
+                  </div>
                 ))}
-              </ul>
+              </div>
 
-              <div className="bg-[#111] border border-[#1e1e1e] p-5 mb-8">
-                <p className="text-[#777] text-sm leading-relaxed">
-                  Early intervention is always cheaper than delayed repair. Our team assesses the full extent
-                  of damage, develops a targeted repair plan, and executes with minimal disruption to your operations.
+              <div id="tilt-panel-repair" className="border-t border-[#1e1e1e] pt-8 mb-8">
+                <h3 className="text-white font-semibold text-lg tracking-wide mb-2">
+                  Tilt Panel Repair
+                </h3>
+                <p className="text-[#888] text-sm leading-relaxed mb-5">
+                  Already have a tilt panel building? Over time, weather, ground movement and age cause cracking,
+                  spalling and joint deterioration. We assess the full extent of the damage, develop a targeted
+                  repair plan, and carry it out with minimal disruption to your operations.
                 </p>
+                <ul className="space-y-3">
+                  {tiltPanelProblems.map((p) => (
+                    <li key={p} className="flex items-start gap-3 text-[#777] text-sm">
+                      <svg className="w-4 h-4 text-[#999] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
+                      </svg>
+                      {p}
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               <Link
                 href="/contact"
                 className="inline-flex items-center bg-[#999] hover:bg-[#777] text-white font-semibold px-7 py-3.5 tracking-wide transition-all duration-200 hover:scale-105 text-sm"
               >
-                Get a Free Assessment
+                Get a Free Quote
                 <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>

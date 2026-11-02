@@ -104,7 +104,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#888] leading-relaxed">
                 <p>
-                  Konx Construction Group is a Perth-based commercial construction company specialising in tilt panel repair, commercial fit out, and concrete works. We operate across the Perth metropolitan area and regional WA, working directly with property owners, facility managers, developers, and commercial tenants.
+                  Konx Construction Group is a Perth-based commercial construction company specialising in tilt panel construction and repair, commercial fit out, and concrete works. We operate across the Perth metropolitan area and regional WA, working directly with property owners, facility managers, developers, and commercial tenants.
                 </p>
                 <p>
                   We built this company on a simple principle: commercial clients deserve contractors who are accountable. Too often, building owners deal with contractors who overpromise, underdeliver, and disappear when problems arise. We operate differently.

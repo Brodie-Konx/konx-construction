@@ -17,9 +17,11 @@ export const metadata: Metadata = {
     template: "%s | Konx Construction Group",
   },
   description:
-    "Perth's commercial construction specialists. Tilt panel repair, commercial fit out, and concrete works. Fast turnaround, free site assessments.",
+    "Perth's commercial construction specialists. Tilt panel construction and repair, commercial fit out, and concrete works. Fast turnaround, free site assessments.",
   keywords: [
     "commercial construction Perth",
+    "tilt panel construction Perth",
+    "tilt panel builder Perth",
     "tilt panel repair Perth",
     "commercial fit out Perth",
     "concrete works Perth",
@@ -54,7 +56,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               name: "Konx Construction Group PTY LTD",
               description:
-                "Perth's commercial construction specialists. Tilt panel repair, commercial fit out, and concrete works.",
+                "Perth's commercial construction specialists. Tilt panel construction and repair, commercial fit out, and concrete works.",
               url: "https://www.konxconstructiongroup.com",
               telephone: "0478 530 664",
               email: "Info@konxconstructiongroup.com",
@@ -83,9 +85,9 @@ export default function RootLayout({
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Tilt Panel Repair",
+                      name: "Tilt Panel Construction",
                       description:
-                        "Expert repair of cracked, spalled, and deteriorating tilt panel structures in Perth.",
+                        "Start-to-finish tilt panel construction for commercial and industrial buildings in Perth, including tilt panel repair.",
                     },
                   },
                   {

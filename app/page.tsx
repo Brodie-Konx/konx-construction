@@ -6,14 +6,14 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 export const metadata: Metadata = {
   title: "Konx Construction Group PTY LTD | Perth Commercial Construction",
   description:
-    "Perth's commercial construction specialists. Tilt panel repair, commercial fit out, and concrete works. Get a free quote today.",
+    "Perth's commercial construction specialists. Tilt panel construction and repair, commercial fit out, and concrete works. Get a free quote today.",
 };
 
 const services = [
   {
-    title: "Tilt Panel Repair",
+    title: "Tilt Panel Construction",
     description:
-      "Expert repair of cracked, spalled, and deteriorating tilt panel structures. We restore structural integrity and extend the life of your building.",
+      "Start-to-finish tilt panel builds for commercial and industrial buildings — from slab and panel casting to lifting, bracing and handover. Plus expert repair of cracked, spalled and damaged panels.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
@@ -97,7 +97,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-lg md:text-xl text-[#aaa] max-w-xl leading-relaxed mb-10">
-              Tilt panel repair, commercial fit out, and precision concrete works.
+              Tilt panel construction, commercial fit out, and precision concrete works.
               Built for businesses that demand quality and reliability.
             </p>
 

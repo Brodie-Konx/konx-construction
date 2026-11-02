@@ -18,7 +18,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-[#666] text-sm leading-relaxed max-w-xs">
-              Perth&apos;s trusted commercial construction specialists. Tilt panel repair,
+              Perth&apos;s trusted commercial construction specialists. Tilt panel construction,
               commercial fit out, and concrete works — delivered on time and built to last.
             </p>
             <p className="text-[#444] text-xs mt-6 tracking-wide">
@@ -57,7 +57,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               {[
-                "Tilt Panel Repair",
+                "Tilt Panel Construction",
                 "Commercial Fit Out",
                 "Concrete Works",
               ].map((s) => (
