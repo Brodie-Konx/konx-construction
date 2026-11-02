@@ -69,8 +69,8 @@ export default function HomePage() {
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/concrete-works.jpg"
-            alt="Commercial construction site Perth"
+            src="/images/tilt-panel-bracing-crew.jpg"
+            alt="Konx crew inspecting braced tilt panels on a Perth commercial build"
             fill
             priority
             className="object-cover"
