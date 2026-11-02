@@ -80,8 +80,8 @@ export default function AboutPage() {
             <AnimateOnScroll direction="left">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
-                  src="/images/concrete-works.jpg"
-                  alt="Konx Construction Group team Perth"
+                  src="/images/tilt-panel-crane-lift.jpg"
+                  alt="Konx crew guiding a tilt panel during a crane lift in Perth"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
