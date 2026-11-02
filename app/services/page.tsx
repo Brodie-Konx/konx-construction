@@ -85,10 +85,10 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <AnimateOnScroll direction="left">
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1679530988140-d6844f4e2ee8?w=1000&q=80"
-                  alt="Tilt panel construction Perth"
+                  src="/images/tilt-panel-lift.jpg"
+                  alt="Konx crew guiding a tilt panel into place during a crane lift in Perth"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
